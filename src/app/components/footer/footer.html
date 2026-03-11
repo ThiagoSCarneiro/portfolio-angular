@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Thiago</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Navegação</h4>
+        <ul class="footer-nav">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="footer-heading">Social</h4>
+        <div class="social-links">
+          @for (link of socialLinks; track link.name) {
+            <a [href]="link.url" class="social-link" target="_blank" rel="noopener">
+              {{ link.name }}
+            </a>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} Thiago da Silva Carneiro. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>

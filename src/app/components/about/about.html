@@ -1,0 +1,39 @@
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Sobre Mim</span>
+      <h2 class="section-title">Trajetória Profissional</h2>
+      <p class="section-subtitle">
+        Profissional dedicado à engenharia de software e ao desenvolvimento de soluções tecnológicas de alto impacto.
+      </p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Sou um estudante de tecnologia apaixonado por desenvolvimento, atualmente sem experiência profissional formal, mas com muita vontade de aprender e contribuir. Sou Técnico formado em Desenvolvimento de Sistemas e estou cursando Análise e Desenvolvimento de Sistemas (ADS).
+        </p>
+        <p>
+          Tenho dedicado meu tempo aos estudos práticos e à criação de projetos pessoais, desenvolvendo conhecimentos sólidos em tecnologias como Java, React, Angular, Spring Boot, Laravel e MySQL. Meu objetivo é aplicar essas habilidades no mercado e evoluir continuamente como Desenvolvedor Full Stack.
+        </p>
+        <a href="#contact" class="btn btn-primary about-btn">
+          Entrar em Contato
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="about-highlights">
+        @for (item of highlights; track item.title) {
+          <div class="highlight-card card">
+            <span class="highlight-icon">{{ item.icon }}</span>
+            <h3 class="highlight-title">{{ item.title }}</h3>
+            <p class="highlight-desc">{{ item.description }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

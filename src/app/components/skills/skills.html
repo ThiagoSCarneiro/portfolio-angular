@@ -1,0 +1,30 @@
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Habilidades</span>
+      <h2 class="section-title">Minhas Competências</h2>
+      <p class="section-subtitle">
+        Tecnologias, linguagens e ferramentas nas quais possuo proficiência e utilizo na engenharia de software.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of categories; track category.title) {
+        <div class="skill-category card">
+          <div class="category-header">
+            <span class="category-icon">{{ category.icon }}</span>
+            <h3 class="category-title">{{ category.title }}</h3>
+          </div>
+          <div class="category-skills-tags">
+            @for (skill of category.skills; track skill.name) {
+              <div class="skill-tag" [style.border-color]="skill.color">
+                <span class="skill-dot" [style.background-color]="skill.color"></span>
+                <span class="skill-name">{{ skill.name }}</span>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
