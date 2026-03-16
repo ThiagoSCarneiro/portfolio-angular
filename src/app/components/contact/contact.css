@@ -112,6 +112,10 @@
 .github-link:hover { border-color: rgba(110, 84, 148, 0.5); box-shadow: 0 0 20px rgba(110, 84, 148, 0.15); }
 .github-link:hover .arrow-icon { color: #6e5494; }
 
+.resume-link:hover .icon-wrapper { background: linear-gradient(135deg, #10b981, #059669); }
+.resume-link:hover { border-color: rgba(16, 185, 129, 0.5); box-shadow: 0 0 20px rgba(16, 185, 129, 0.15); }
+.resume-link:hover .arrow-icon { color: #10b981; }
+
 
 /* Responsive */
 @media (max-width: 600px) {

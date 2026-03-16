@@ -14,4 +14,11 @@ export class ContactComponent {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
   }
+
+  downloadResume() {
+    const link = document.createElement('a');
+    link.href = 'Thiago_da_Silva.pdf';
+    link.download = 'Thiago_da_Silva.pdf';
+    link.click();
+  }
 }
