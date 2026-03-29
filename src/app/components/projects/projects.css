@@ -88,6 +88,12 @@
   color: var(--accent-primary);
 }
 
+.project-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 968px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);

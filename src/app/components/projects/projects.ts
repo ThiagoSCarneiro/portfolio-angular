@@ -5,6 +5,7 @@ interface Project {
   description: string;
   tags: string[];
   emoji: string;
+  githubUrl?: string;
 }
 
 @Component({
@@ -37,6 +38,7 @@ export class ProjectsComponent {
       description: 'App mobile de PDV, baseado nos sistemas do projeto integrador. Focado em auxiliar vendedores ambulantes a controlar seus produtos e gerar relatórios que ajudam a analisar os dias de melhor venda.',
       tags: ['Angular', 'Spring Boot', 'Java', 'API REST'],
       emoji: '📈',
+      githubUrl: 'https://github.com/ThiagoSCarneiro/VendaCerta',
     },
   ];
 }
